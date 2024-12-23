@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        scale: 0.5;
+        margin: auto;
+      }
+      .Slider {
+        width: 700px;
+        height: 450px;
+        background-color: rgb(26, 30, 33);
+        overflow: hidden;
+        position: relative;
+      }
+      .slide {
+        position: absolute;
+        transition: 0.3s;
+      }
+      .slide img {
+        width: 700px;
+      }
+      .Slider button {
+        display: block;
+        background-color: rgba(128, 128, 128, 0.758);
+        padding: 0;
+        border: none;
+        outline: none;
+        width: fit-content;
+        position: absolute;
+      }
+      .right-btn {
+        transform: translateX(1250%) translatey(350%);
+      }
+      .left-btn {
+        transform: translateX(50%) translatey(350%);
+      }
+      button img,
+      button {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .F_Dots {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        /* background-color: red; */
+        width: 650px;
+        padding: 20px;
+        z-index: 3;
+        justify-content: center;
+        transform: translate(0, 50%);
+        /* transform: translate(0, 1200%); */
+      }
+      .F_Dots button {
+        width: 45px;
+        height: 45px;
+        border: 0;
+        background-color: rgba(128, 128, 128, 0.834);
+        border-radius: 50%;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Slider">
+      <div class="slide">
+        <img src="./Assets/img1.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./Assets/img2.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./Assets/img3.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./Assets/img4.jpg" alt="" />
+      </div>
+      <button class="right-btn">
+        <img src="./Assets/Right-Arr.png" alt="" />
+      </button>
+      <button class="left-btn">
+        <img src="./Assets/Left-Arr.png" alt="" />
+      </button>
+    </div>
+    <div class="F_Dots">
+      <button class="btn1"></button>
+      <button class="btn"></button>
+      <button class="btn"></button>
+      <button class="btn"></button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
